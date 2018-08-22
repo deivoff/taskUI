@@ -31,7 +31,7 @@ gulp.task('js', function() {
     .pipe(babel({
         presets: ['env']
     }))
-    .pipe(concat(app.min.js))
+    .pipe(concat('app.min.js'))
     .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/js'))
