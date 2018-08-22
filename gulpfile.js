@@ -19,8 +19,10 @@ gulp.task('css', function() {
 
 gulp.task('html', function() {
     return gulp.src('src/templates/*.pug')
-    .pipe(pug())
-    .pipe(gulp.dest('build/html'))
+    .pipe(pug({
+        pretty: true
+    }))
+    .pipe(gulp.dest('build'))
 });
 
 gulp.task('js', function() {
@@ -30,6 +32,7 @@ gulp.task('js', function() {
         presets: ['env']
     }))
     .pipe(concat(app.min.js))
+    .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/js'))
 });
