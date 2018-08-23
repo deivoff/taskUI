@@ -1,7 +1,65 @@
 .btn
-    width 249px
+    border: none
+    margin: 6px 4px
+    color: white
+    width: 249px
     height: 60px
     border-radius: 10px
     background-color: $defaultColor
     font-size: 20px
+    font-family: $fontStack
+    font-weight: bold
     text-align: center
+    outline: none
+    opacity: 0.9
+    border-top: 1px solid rgba(255, 255, 255, 0.3)
+
+.btn:active
+    box-shadow: 0 1px rgba(0, 0, 0, 0.1) inset
+    border-color: transparent
+
+.btn_default, a.btn_default:link, a.btn_default:visited
+    color: white
+    background-color: $defaultColor
+
+.btn_default:hover, 
+.btn_default:active,
+.btn_default.active
+    color: white
+    background-color: $defaultColorHover
+
+.btn_primary, 
+a.btn_primary:link, 
+a.btn_primary:visited
+    color: white
+    background-color: $primaryColor
+
+.btn_primary:hover, 
+.btn_primary:active,
+.btn_primary.active
+    color: white
+    background-color: $primaryColorHover
+
+.btn_success, 
+a.btn_success:link, 
+a.btn_success:visited
+    color: white
+    background-color: $successColor
+
+.btn_success:hover, 
+.btn_success:active,
+.btn_success.active
+    color: white
+    background-color: $successColorHover
+    
+.btn_info, 
+a.btn_info:link, 
+a.btn_info:visited
+    color: white
+    background-color: $infoColor
+
+.btn_info:hover, 
+.btn_info:active,
+.btn_info.active
+    color: white
+    background-color: $infoColorHover
