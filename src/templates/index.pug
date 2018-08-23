@@ -4,9 +4,17 @@ html
         title My title for pug/sass
         link(rel='stylesheet', href='css/style.css')
     body
-        h1 Hello world
-        p Where you from?
-        button.btn.btn_default BUTTON
-        button.btn.btn_success BUTTON
-        button.btn.btn_info BUTTON
-        button.btn.btn_primary BUTTON
+        .card.card_primary
+            .card__header login 
+            .card__body Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dicta facilis ad magni pariatur, doloribus aspernatur optio consequuntur nemo rem deserunt iure officia ea praesentium.
+            .card__footer Lorem, ipsum.        
+        .card.card_warning
+            .card__header info
+            .card__body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, enim.
+        .card.card_success
+            .card__header download
+            .card__body Lorem ipsum dolor sit amet.
+        button.btn.btn_default default
+        button.btn.btn_success success
+        button.btn.btn_info info
+        button.btn.btn_primary primary

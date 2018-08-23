@@ -1,0 +1,49 @@
+
+$bodyCardBackground: rgba(255, 255, 255, 0.1)   
+    
+.card
+    border: none
+    width: 300px
+    margin: 10px
+    border-radius: 10px
+    background: $bodyCardBackground
+    border: 1px solid rgba(255, 255, 255, 0.1)
+
+.card>.card__header
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%
+    margin: -1px
+    height: 55px
+    padding-top: 5px 
+    border-radius: 10px 10px 0 0
+    border: 1px solid
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 20px
+    border-color: transparent
+    border-top-color: rgba(255, 255, 255, 0.3)
+    border-bottom-color: rgba(0, 0, 0, 0.1)
+    
+.card>.card__body
+    padding: 20px
+
+.card>.card__footer
+    background: rgba(255, 255, 255, 0.3)
+    border-radius: 0 0 10px 10px
+    margin: -1px
+    height: 60px
+
+.card_primary>.card__header
+    background-color: $primaryColor
+
+.card_success>.card__header
+    background-color: $successColor
+
+.card_info>.card__header
+    background-color: $infoColor
+
+.card_warning>.card__header
+    background-color: $warningColor
