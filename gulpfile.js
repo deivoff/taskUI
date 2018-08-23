@@ -52,7 +52,7 @@ gulp.task('js', function() {
 gulp.task('default', [ 'css', 'html', 'js']);
 
 gulp.task('watch', ['browserSync', 'default'], function() {
-    gulp.watch('src/templates/*.sass', ['css']);
+    gulp.watch('src/templates/**/*.sass', ['css']);
     gulp.watch('src/templates/*.pug', ['html']);
     gulp.watch('src/javascript/*.js', ['js']);
 })
