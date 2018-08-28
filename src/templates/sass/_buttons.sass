@@ -1,3 +1,8 @@
+.btn-container
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+
 .btn
     border: none
     margin: 6px 4px
@@ -14,6 +19,10 @@
     opacity: 0.9
     text-transform: uppercase
     border-top: 1px solid rgba(255, 255, 255, 0.3)
+
+.btn:hover,
+.btn:not(:hover)
+    transition: 0.3s
 
 .btn:active
     box-shadow: 0 1px rgba(0, 0, 0, 0.1) inset

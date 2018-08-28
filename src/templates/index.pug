@@ -6,15 +6,26 @@ html
     body
         .card.card_primary
             .card__header login 
-            .card__body Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dicta facilis ad magni pariatur, doloribus aspernatur optio consequuntur nemo rem deserunt iure officia ea praesentium.
-            .card__footer Lorem, ipsum.        
+            .card__body
+                form.form_login(method="post")
+                    label.label_login(for="email") Email
+                        input.input_login#email(type="text")
+                    label.label_login(for="password") Password
+                        input.input_login#password(type="password")
+                p.line Or
+            .card__footer
+                .social-icon
+                    .icon_twitter
+                    .icon_google
+                    .icon_fb
         .card.card_warning
-            .card__header info
+            .card__header profile
             .card__body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, enim.
         .card.card_success
             .card__header download
             .card__body Lorem ipsum dolor sit amet.
-        button.btn.btn_default default
-        button.btn.btn_success success
-        button.btn.btn_info info
-        button.btn.btn_primary primary
+        .btn-container
+            button.btn.btn_default default
+            button.btn.btn_success success
+            button.btn.btn_info info
+            button.btn.btn_primary primary
